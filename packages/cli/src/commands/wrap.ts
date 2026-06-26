@@ -88,7 +88,7 @@ export async function runWrap(passthroughArgs: string[]): Promise<void> {
   } catch {
     process.stderr.write(
       "aside wrap needs the optional 'node-pty' dependency.\n" +
-        "Install it:  npm i -g node-pty   (or reinstall @aside/cli)\n",
+        "Install it:  npm i -g node-pty   (or reinstall @asidedev/cli)\n",
     );
     process.exitCode = 1;
     return;

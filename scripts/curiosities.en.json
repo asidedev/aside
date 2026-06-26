@@ -102,7 +102,7 @@
     { "body": "Aside never touches your files, paths, or prompts — and the code proves it.", "path": "/about" },
     { "body": "Want your message in dev's most-watched line? Sponsor Aside.", "path": "/sponsor" },
     { "body": "One curious line while the AI thinks. Aside, MIT-licensed.", "path": "/" },
-    { "body": "New here? npm i -g @aside/cli && aside install.", "path": "/" },
+    { "body": "New here? npm i -g @asidedev/cli && aside install.", "path": "/" },
     { "body": "Aside turns idle wait-states into something worth reading.", "path": "/" }
   ]
 }

@@ -10,8 +10,8 @@
     "apps/vscode"
   ],
   "scripts": {
-    "build": "npm run build -w @aside/shared && npm run build -w @aside/cli",
-    "test": "npm run test -w @aside/cli",
+    "build": "npm run build -w @aside/shared && npm run build -w @asidedev/cli",
+    "test": "npm run test -w @asidedev/cli",
     "dev:web": "npm run dev -w @aside/web"
   },
   "license": "MIT"

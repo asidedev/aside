@@ -46,7 +46,7 @@ node packages/cli/dist/index.js about         # transparency disclosure
 ## Install into Claude Code
 
 ```bash
-npm i -g @aside/cli
+npm i -g @asidedev/cli
 aside install        # non-destructive merge into ~/.claude/settings.json
 aside about          # see exactly what is read/sent
 aside uninstall      # clean removal
