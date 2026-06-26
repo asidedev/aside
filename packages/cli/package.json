@@ -1,6 +1,6 @@
 {
   "name": "@asidedev/cli",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Aside CLI — renders developer microcuriosities in the Claude Code status line",
   "type": "module",
   "bin": {

@@ -4,7 +4,7 @@ import { join } from "node:path";
 /** Backend base URL. Overridable for local dev / self-hosting. */
 export const BACKEND_URL =
   process.env.ASIDE_BACKEND_URL?.replace(/\/+$/, "") ||
-  "https://aside-melissas-projects-6a8130ee.vercel.app";
+  "https://asidedev.vercel.app";
 
 export const ASIDE_DIR =
   process.env.ASIDE_HOME || join(homedir(), ".aside");
@@ -39,4 +39,4 @@ export const PIN_GC_MS = 24 * 60 * 60 * 1000; // drop pins older than 24h
 export const CACHE_STALE_MS = 6 * 60 * 60 * 1000; // refresh cache if older than 6h
 export const SYNC_MIN_INTERVAL_MS = 30 * 60 * 1000; // don't spawn sync more than every 30 min
 
-export const CLI_VERSION = "0.1.0";
+export const CLI_VERSION = "0.1.1";
