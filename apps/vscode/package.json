@@ -1,0 +1,55 @@
+{
+  "name": "aside-vscode",
+  "displayName": "Aside — curiosities while the AI thinks",
+  "description": "Shows a short developer curiosity in the VS Code status bar while Claude Code is thinking. Local-first, privacy-preserving.",
+  "version": "0.1.0",
+  "publisher": "aside",
+  "license": "MIT",
+  "engines": { "vscode": "^1.85.0" },
+  "categories": ["Other"],
+  "activationEvents": ["onStartupFinished"],
+  "main": "./dist/extension.js",
+  "enabledApiProposals": ["terminalDataWriteEvent"],
+  "contributes": {
+    "commands": [
+      { "command": "aside.next", "title": "Aside: Show next curiosity" },
+      { "command": "aside.openLink", "title": "Aside: Open current link" },
+      { "command": "aside.toggle", "title": "Aside: Enable/disable" }
+    ],
+    "configuration": {
+      "title": "Aside",
+      "properties": {
+        "aside.backendUrl": {
+          "type": "string",
+          "default": "https://aside-melissas-projects-6a8130ee.vercel.app",
+          "description": "Base URL of the Aside backend that serves curiosities."
+        },
+        "aside.enabled": {
+          "type": "boolean",
+          "default": true,
+          "description": "Show curiosities in the status bar."
+        },
+        "aside.detectThinkingFromTerminal": {
+          "type": "boolean",
+          "default": false,
+          "markdownDescription": "**Off by default.** When on, Aside receives integrated-terminal writes and tests each one against a single spinner regex to know when Claude is thinking, then **immediately discards** it. No terminal content is ever stored, logged, buffered, or sent. When off, Aside reads nothing from your terminal and rotates on a timer instead."
+        },
+        "aside.idleRotateSeconds": {
+          "type": "number",
+          "default": 25,
+          "description": "When thinking can't be detected, rotate the curiosity on this interval."
+        }
+      }
+    }
+  },
+  "scripts": {
+    "compile": "tsc -p ./",
+    "watch": "tsc -w -p ./",
+    "vscode:prepublish": "npm run compile"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@types/vscode": "^1.85.0",
+    "typescript": "^5.6.0"
+  }
+}

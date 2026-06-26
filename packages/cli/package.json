@@ -1,0 +1,31 @@
+{
+  "name": "@aside/cli",
+  "version": "0.1.0",
+  "description": "Aside CLI — renders developer microcuriosities in the Claude Code status line",
+  "type": "module",
+  "bin": {
+    "aside": "dist/index.js"
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "vitest run",
+    "test:watch": "vitest"
+  },
+  "dependencies": {
+    "@aside/shared": "*",
+    "commander": "^12.1.0"
+  },
+  "optionalDependencies": {
+    "node-pty": "^1.1.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "@xterm/headless": "^5.5.0",
+    "typescript": "^5.6.0",
+    "vitest": "^2.1.0"
+  },
+  "license": "MIT"
+}
