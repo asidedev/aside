@@ -34,7 +34,7 @@ const FALLBACK: Curiosity[] = [
     body: "Aside is open source and privacy-first — it never reads your code.",
     is_sponsored: true,
     sponsor_handle: "aside",
-    click_url: "https://aside-melissas-projects-6a8130ee.vercel.app/",
+    click_url: "https://asidedev.vercel.app/",
   },
 ];
 function c(body: string): Curiosity {

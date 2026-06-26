@@ -1,4 +1,4 @@
-const REPO_URL = "https://github.com/aside-dev/aside";
+const REPO_URL = "https://github.com/asidedev/aside";
 
 export function Footer() {
   return (

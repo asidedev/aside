@@ -1,6 +1,6 @@
 {
   "sponsor": { "name": "Aside", "handle": "aside" },
-  "site": "https://aside-melissas-projects-6a8130ee.vercel.app",
+  "site": "https://asidedev.vercel.app",
   "curiosities": [
     { "body": "The first computer \"bug\" was a real moth, taped into a logbook in 1947.", "topic": "history", "difficulty": "easy" },
     { "body": "HTTP 418 \"I'm a teapot\" is a real status code, from a 1998 April Fools RFC.", "topic": "protocols", "difficulty": "easy" },

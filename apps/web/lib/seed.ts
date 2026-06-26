@@ -5,7 +5,7 @@ import type { Curiosity } from "@aside/shared";
  * click redirect can be exercised locally without a database. This is a curated
  * English subset; the live DB holds the full set (see scripts/curiosities.en.json).
  */
-const SITE = "https://aside-melissas-projects-6a8130ee.vercel.app";
+const SITE = "https://asidedev.vercel.app";
 
 export const SEED_CURIOSITIES: Curiosity[] = [
   mk("11111111-1111-1111-1111-111111111101", "The first computer \"bug\" was a real moth, taped into a logbook in 1947.", "history"),

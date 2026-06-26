@@ -2,7 +2,7 @@ import { Nav } from "./components/Nav";
 import { Footer } from "./components/Footer";
 import { CopyButton } from "./components/CopyButton";
 
-const REPO_URL = "https://github.com/aside-dev/aside";
+const REPO_URL = "https://github.com/asidedev/aside";
 
 export default function Home() {
   return (

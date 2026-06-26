@@ -5,9 +5,9 @@ imports `@aside/shared` (type-only), which must be built before `next build`.
 
 ## What is already done
 
-- **Vercel project:** `aside` (scope `melissas-projects-6a8130ee`), linked to this
-  repo root. The project was deployed to **production**.
-- **Production URL:** `https://aside-melissas-projects-6a8130ee.vercel.app`
+- **Vercel project:** `aside`, linked to this repo root. The project was
+  deployed to **production**.
+- **Production URL:** `https://asidedev.vercel.app`
   (stable, auto-points to the latest production deployment).
 - **Monorepo build:** handled by `vercel.json` at the repo root:
   ```json
@@ -22,7 +22,7 @@ imports `@aside/shared` (type-only), which must be built before `next build`.
 - **Production env vars** (set via `vercel env add ... production`):
   - `SUPABASE_URL`
   - `SUPABASE_SERVICE_ROLE_KEY` (secret, server-only — never exposed to the client)
-  - `NEXT_PUBLIC_BASE_URL = https://aside-melissas-projects-6a8130ee.vercel.app`
+  - `NEXT_PUBLIC_BASE_URL = https://asidedev.vercel.app`
 
 ## Redeploying
 
@@ -49,7 +49,7 @@ After that, the public checks below will pass without an authenticated browser
 session:
 
 ```bash
-PROD=https://aside-melissas-projects-6a8130ee.vercel.app
+PROD=https://asidedev.vercel.app
 curl -s "$PROD/api/curiosities?os=darwin&install_id=$(uuidgen | tr 'A-F' 'a-f')"
 ```
 

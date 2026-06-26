@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 
-const INSTALL = "npm i -g @aside/cli && aside install";
+const INSTALL = "npm i -g @asidedev/cli && aside install";
 
 /**
  * Copyable install one-liner. Uses the clipboard API only on click — no

@@ -4,7 +4,7 @@ import "./globals.css";
 export const metadata = {
   metadataBase: new URL(
     process.env.NEXT_PUBLIC_BASE_URL ||
-      "https://aside-melissas-projects-6a8130ee.vercel.app",
+      "https://asidedev.vercel.app",
   ),
   title: "Aside — developer curiosities in your status line",
   description:

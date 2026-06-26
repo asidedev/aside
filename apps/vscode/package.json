@@ -21,7 +21,7 @@
       "properties": {
         "aside.backendUrl": {
           "type": "string",
-          "default": "https://aside-melissas-projects-6a8130ee.vercel.app",
+          "default": "https://asidedev.vercel.app",
           "description": "Base URL of the Aside backend that serves curiosities."
         },
         "aside.enabled": {
