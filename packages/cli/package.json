@@ -15,17 +15,26 @@
     "test:watch": "vitest"
   },
   "dependencies": {
-    "@aside/shared": "*",
     "commander": "^12.1.0"
   },
   "optionalDependencies": {
     "node-pty": "^1.1.0"
   },
   "devDependencies": {
+    "@aside/shared": "*",
     "@types/node": "^22.0.0",
     "@xterm/headless": "^5.5.0",
     "typescript": "^5.6.0",
     "vitest": "^2.1.0"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asidedev/aside.git",
+    "directory": "packages/cli"
+  },
+  "homepage": "https://github.com/asidedev/aside#readme",
+  "publishConfig": {
+    "access": "public"
+  }
 }

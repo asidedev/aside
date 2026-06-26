@@ -1,7 +1,7 @@
 import { BACKEND_URL, CLI_VERSION } from "../config.js";
 import { peekInstallId } from "../core/identity.js";
 
-const REPO_URL = "https://github.com/aside-dev/aside";
+const REPO_URL = "https://github.com/asidedev/aside";
 
 /** Plain-language transparency disclosure (Section 5.4). */
 export function runAbout(): void {
